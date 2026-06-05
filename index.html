@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SARL SIGMA CATERING | Catering & Base Life Supply Solutions</title>
+
+<meta name="description" content="SARL SIGMA CATERING provides industrial catering, base life services, food supply and logistics support for industrial projects and corporate organizations in Algeria.">
+
+<meta property="og:title" content="SARL SIGMA CATERING">
+<meta property="og:description" content="Industrial catering, base life services & food supply solutions in Algeria.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sigmacatering.dz">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+
+:root{
+    --primary:#0b3b60;
+    --secondary:#f28c28;
+    --dark:#111827;
+    --light:#f8fafc;
+    --text:#374151;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#ffffff;
+    color:var(--text);
+    line-height:1.7;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(11,59,96,.95);
+    backdrop-filter:blur(10px);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-area img{
+    height:55px;
+}
+
+.logo-text{
+    color:white;
+}
+
+.logo-text h2{
+    font-size:18px;
+}
+
+.logo-text span{
+    font-size:12px;
+    opacity:.8;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:var(--secondary);
+}
+
+.lang-switch{
+    display:flex;
+    gap:5px;
+}
+
+.lang-switch button{
+    border:none;
+    cursor:pointer;
+    padding:7px 10px;
+    border-radius:6px;
+    background:white;
+    font-weight:600;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url('images/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:white;
+    padding:100px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--secondary);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:black;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:38px;
+    color:var(--primary);
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#f9fafb;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.about-content h3{
+    color:var(--primary);
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+/* ================= SERVICES ================= */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+/* ================= WHY CHOOSE US ================= */
+
+.why{
+    background:var(--primary);
+    color:white;
+}
+
+.why .section-title h2{
+    color:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:rgba(255,255,255,.08);
+    padding:25px;
+    border-radius:15px;
+}
+
+/* ================= CERTIFICATIONS ================= */
+
+.certifications{
+    background:#f8fafc;
+}
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.cert-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.cert-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.cert-card span{
+    color:var(--secondary);
+    font-weight:bold;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+.contact-section{
+    background:#f8fafc;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.contact-card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-card h3{
+    color:#0b3b60;
+    margin-bottom:15px;
+}
+
+.footer{
+    background:#0b3b60;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+    background:none;
+    border:none;
+    padding:5px;
+}
+
+.hamburger span{
+    display:block;
+    width:25px;
+    height:3px;
+    background:white;
+    border-radius:3px;
+    transition:.3s;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:rgba(11,59,96,.98);
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+        gap:15px;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+
+<div class="nav-container">
+
+    <div class="logo-area">
+
+        <img src="images/sigma-logo.png" alt="Sigma Catering">
+
+        <div class="logo-text">
+            <h2>SIGMA CATERING</h2>
+            <span>Industrial Catering Solutions</span>
+        </div>
+
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#about" id="navAbout">About</a>
+        <a href="#services" id="navServices">Services</a>
+        <a href="#why" id="navWhy">Why Us</a>
+        <a href="#certifications" id="navCerts">Certifications</a>
+        <a href="#contact" id="navContact">Contact</a>
+    </div>
+
+    <div class="lang-switch">
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('fr')">FR</button>
+        <button onclick="setLang('ar')">AR</button>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</div>
+
+
+</nav>
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+    <h1 id="heroTitle">
+        SARL SIGMA CATERING
+    </h1>
+
+    <p id="heroSubtitle">
+        Professional Catering & Base Life Supply Solutions
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#services" class="btn btn-primary">
+            Our Services
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+            Contact Us
+        </a>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section id="about" class="about">
+
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2 id="aboutTitle">About Us</h2>
+
+        <p id="aboutSubtitle">
+            Delivering quality catering and supply solutions
+            for industrial and corporate environments.
+        </p>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-image">
+            <img src="images/about.png" alt="About Sigma Catering">
+        </div>
+
+        <div class="about-content">
+
+            <h3 id="aboutHeading">Reliable Partner For Industrial Catering</h3>
+
+            <p id="aboutText1">
+                SARL SIGMA CATERING specializes in catering,
+                food supply, logistics support and base life
+                services for industrial projects, construction
+                sites and corporate organizations throughout Algeria.
+            </p>
+
+            <br>
+
+            <p id="aboutText2">
+                Our mission is to provide safe, high-quality
+                meals and efficient support services while
+                maintaining the highest standards of food safety,
+                environmental responsibility and occupational health.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section id="services">
+
+
+<div class="container">
+
+    <div class="section-title">
+        <h2 id="servicesTitle">Our Services</h2>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">🍽️</div>
+            <h3 id="srvTitle1">Industrial Catering</h3>
+            <p id="srvDesc1">Daily meal services for industrial sites and operational bases.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏕️</div>
+            <h3 id="srvTitle2">Base Life Management</h3>
+            <p id="srvDesc2">Comprehensive support services for remote camps and bases.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚚</div>
+            <h3 id="srvTitle3">Food Supply</h3>
+            <p id="srvDesc3">Procurement and delivery of food products and catering materials.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3 id="srvTitle4">Corporate Meal Services</h3>
+            <p id="srvDesc4">Customized meal solutions for institutions and companies.</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section id="why" class="why">
+
+
+<div class="container">
+
+    <div class="section-title">
+        <h2 id="whyTitle">Why Choose Sigma Catering?</h2>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card" id="whyCard1">
+            ✓ Internationally Certified
+        </div>
+
+        <div class="why-card" id="whyCard2">
+            ✓ Food Safety Commitment
+        </div>
+
+        <div class="why-card" id="whyCard3">
+            ✓ Experienced Team
+        </div>
+
+        <div class="why-card" id="whyCard4">
+            ✓ Reliable Supply Chain
+        </div>
+
+        <div class="why-card" id="whyCard5">
+            ✓ Health & Safety Compliance
+        </div>
+
+        <div class="why-card" id="whyCard6">
+            ✓ Customer Satisfaction Focus
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<section id="certifications" class="certifications">
+
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2 id="certsTitle">Certifications</h2>
+
+        <p id="certsSubtitle">
+            International standards demonstrating our commitment
+            to quality, safety and excellence.
+        </p>
+
+    </div>
+
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <h3>ISO 9001</h3>
+            <span id="certDesc1">Quality Management</span>
+        </div>
+
+        <div class="cert-card">
+            <h3>ISO 14001</h3>
+            <span id="certDesc2">Environmental Management</span>
+        </div>
+
+        <div class="cert-card">
+            <h3>ISO 45001</h3>
+            <span id="certDesc3">Health & Safety</span>
+        </div>
+
+        <div class="cert-card">
+            <h3>ISO 22000:2018</h3>
+            <span id="certDesc4">Food Safety Management</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2 id="galleryTitle">Gallery</h2>
+
+        <p id="gallerySubtitle">
+            Discover our catering operations, facilities and services.
+        </p>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <img src="images/gallery1.jpg" alt="Gallery Image 1">
+        <img src="images/gallery2.jpg" alt="Gallery Image 2">
+        <img src="images/gallery3.jpg" alt="Gallery Image 3">
+        <img src="images/gallery4.jpg" alt="Gallery Image 4">
+        <img src="images/gallery5.jpg" alt="Gallery Image 5">
+        <img src="images/gallery6.jpg" alt="Gallery Image 6">
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2 id="contactTitle">Contact Us</h2>
+
+        <p id="contactSubtitle">
+            We are ready to support your projects anywhere in Algeria.
+        </p>
+
+    </div>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>Head Office</h3>
+
+            <p>
+                Rue Loïsement<br>
+                Ain Djasser, Batna<br>
+                Algeria
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>Phone & Fax</h3>
+
+            <p>
+                033 24 65 33
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>Mobile</h3>
+
+            <p>
+                0550 37 16 53<br>
+                0770 24 10 58
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>Email</h3>
+
+            <p>
+                sambendib82@yahoo.com
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ================= MAP ================= -->
+
+<section>
+
+
+<div class="container">
+
+    <div class="section-title">
+
+        <h2 id="locationTitle">Location</h2>
+
+    </div>
+
+    <div style="border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.1);">
+
+        <iframe
+            src="https://maps.google.com/maps?q=Ain%20Djasser%20Batna&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+
+<div class="container">
+
+    <h3 id="footerTitle">SARL SIGMA CATERING</h3>
+
+    <p id="footerSubtitle">
+        Professional Catering & Base Life Supply Solutions
+    </p>
+
+    <p style="margin-top:15px;">
+        ISO 9001 | ISO 14001 | ISO 45001 | ISO 22000:2018
+    </p>
+
+    <hr style="margin:25px 0; opacity:.2;">
+
+    <p id="footerCopy">
+        © 2026 SARL SIGMA CATERING - All Rights Reserved
+    </p>
+
+</div>
+
+
+</footer>
+
+<!-- ================= LANGUAGE SYSTEM ================= -->
+
+<script>
+
+const langData = {
+    ar: {
+        dir: "rtl",
+        heroTitle: "شركة سيغما كاترينغ",
+        heroSubtitle: "حلول احترافية للإطعام وتزويد قواعد الحياة",
+        navAbout: "من نحن",
+        navServices: "خدماتنا",
+        navWhy: "لماذا نحن",
+        navCerts: "الشهادات",
+        navContact: "اتصل بنا",
+        aboutTitle: "من نحن",
+        aboutSubtitle: "نقدم حلول إطعام وتزويد عالية الجودة للبيئات الصناعية والمؤسسية.",
+        aboutHeading: "شريك موثوق في الإطعام الصناعي",
+        aboutText1: "تتخصص شركة سيغما كاترينغ في الإطعام وتزويد المواد الغذائية والدعم اللوجستي وخدمات قواعد الحياة للمشاريع الصناعية ومواقع البناء والمؤسسات في جميع أنحاء الجزائر.",
+        aboutText2: "مهمتنا هي تقديم وجبات آمنة وعالية الجودة وخدمات دعم فعالة مع الحفاظ على أعلى معايير سلامة الغذاء والمسؤولية البيئية والصحة المهنية.",
+        servicesTitle: "خدماتنا",
+        srvTitle1: "الإطعام الصناعي",
+        srvDesc1: "خدمات وجبات يومية للمواقع الصناعية وقواعد العمليات.",
+        srvTitle2: "إدارة قواعد الحياة",
+        srvDesc2: "خدمات دعم شاملة للمخيمات والقواعد النائية.",
+        srvTitle3: "توريد المواد الغذائية",
+        srvDesc3: "شراء وتوصيل المنتجات الغذائية ومستلزمات الإطعام.",
+        srvTitle4: "خدمات الطعام المؤسسية",
+        srvDesc4: "حلول وجبات مخصصة للمؤسسات والشركات.",
+        whyTitle: "لماذا تختار سيغما كاترينغ؟",
+        whyCard1: "✓ معتمد دولياً",
+        whyCard2: "✓ الالتزام بسلامة الغذاء",
+        whyCard3: "✓ فريق ذو خبرة",
+        whyCard4: "✓ سلسلة توريد موثوقة",
+        whyCard5: "✓ الامتثال للصحة والسلامة",
+        whyCard6: "✓ التركيز على رضا العملاء",
+        certsTitle: "الشهادات",
+        certsSubtitle: "معايير دولية تثبت التزامنا بالجودة والسلامة والتميز.",
+        certDesc1: "إدارة الجودة",
+        certDesc2: "الإدارة البيئية",
+        certDesc3: "الصحة والسلامة",
+        certDesc4: "إدارة سلامة الغذاء",
+        galleryTitle: "معرض الصور",
+        gallerySubtitle: "صور تعكس خدماتنا وعملياتنا في مجال الإطعام والتزويد.",
+        contactTitle: "اتصل بنا",
+        contactSubtitle: "نحن على استعداد لدعم مشاريعكم في جميع أنحاء الجزائر.",
+        locationTitle: "موقعنا",
+        footerTitle: "شركة سيغما كاترينغ",
+        footerSubtitle: "حلول احترافية للإطعام وتزويد قواعد الحياة"
+    },
+    fr: {
+        dir: "ltr",
+        heroTitle: "SARL SIGMA CATERING",
+        heroSubtitle: "Catering &amp; Approvisionnement des bases vie",
+        navAbout: "À Propos",
+        navServices: "Services",
+        navWhy: "Pourquoi Nous",
+        navCerts: "Certifications",
+        navContact: "Contact",
+        aboutTitle: "À Propos",
+        aboutSubtitle: "Des solutions de restauration et d'approvisionnement de qualité pour les environnements industriels et corporatifs.",
+        aboutHeading: "Partenaire Fiable en Restauration Industrielle",
+        aboutText1: "SARL SIGMA CATERING est spécialisée dans la restauration, l'approvisionnement alimentaire, le soutien logistique et les services de base vie pour les projets industriels, les chantiers de construction et les organisations corporatives à travers l'Algérie.",
+        aboutText2: "Notre mission est de fournir des repas sûrs et de haute qualité ainsi que des services de soutien efficaces tout en maintenant les normes les plus élevées de sécurité alimentaire, de responsabilité environnementale et de santé au travail.",
+        servicesTitle: "Nos Services",
+        srvTitle1: "Restauration Industrielle",
+        srvDesc1: "Services de repas quotidiens pour sites industriels et bases opérationnelles.",
+        srvTitle2: "Gestion de Base Vie",
+        srvDesc2: "Services de soutien complets pour camps et bases éloignés.",
+        srvTitle3: "Approvisionnement Alimentaire",
+        srvDesc3: "Achat et livraison de produits alimentaires et de matériel de restauration.",
+        srvTitle4: "Services de Repas d'Entreprise",
+        srvDesc4: "Solutions de repas personnalisées pour institutions et entreprises.",
+        whyTitle: "Pourquoi Choisir Sigma Catering?",
+        whyCard1: "✓ Certifié Internationalement",
+        whyCard2: "✓ Engagement Sécurité Alimentaire",
+        whyCard3: "✓ Équipe Expérimentée",
+        whyCard4: "✓ Chaîne d'Approvisionnement Fiable",
+        whyCard5: "✓ Conformité Santé et Sécurité",
+        whyCard6: "✓ Satisfaction Client",
+        certsTitle: "Certifications",
+        certsSubtitle: "Normes internationales démontrant notre engagement envers la qualité, la sécurité et l'excellence.",
+        certDesc1: "Gestion de la Qualité",
+        certDesc2: "Gestion Environnementale",
+        certDesc3: "Santé et Sécurité",
+        certDesc4: "Sécurité des Denrées Alimentaires",
+        galleryTitle: "Galerie",
+        gallerySubtitle: "Découvrez nos activités et services de restauration.",
+        contactTitle: "Contactez-nous",
+        contactSubtitle: "Nous sommes prêts à accompagner vos projets partout en Algérie.",
+        locationTitle: "Localisation",
+        footerTitle: "SARL SIGMA CATERING",
+        footerSubtitle: "Solutions Professionnelles de Restauration et d'Approvisionnement"
+    },
+    en: {
+        dir: "ltr",
+        heroTitle: "SARL SIGMA CATERING",
+        heroSubtitle: "Professional Catering & Base Life Supply Solutions",
+        navAbout: "About",
+        navServices: "Services",
+        navWhy: "Why Us",
+        navCerts: "Certifications",
+        navContact: "Contact",
+        aboutTitle: "About Us",
+        aboutSubtitle: "Delivering quality catering and supply solutions for industrial and corporate environments.",
+        aboutHeading: "Reliable Partner For Industrial Catering",
+        aboutText1: "SARL SIGMA CATERING specializes in catering, food supply, logistics support and base life services for industrial projects, construction sites and corporate organizations throughout Algeria.",
+        aboutText2: "Our mission is to provide safe, high-quality meals and efficient support services while maintaining the highest standards of food safety, environmental responsibility and occupational health.",
+        servicesTitle: "Our Services",
+        srvTitle1: "Industrial Catering",
+        srvDesc1: "Daily meal services for industrial sites and operational bases.",
+        srvTitle2: "Base Life Management",
+        srvDesc2: "Comprehensive support services for remote camps and bases.",
+        srvTitle3: "Food Supply",
+        srvDesc3: "Procurement and delivery of food products and catering materials.",
+        srvTitle4: "Corporate Meal Services",
+        srvDesc4: "Customized meal solutions for institutions and companies.",
+        whyTitle: "Why Choose Sigma Catering?",
+        whyCard1: "✓ Internationally Certified",
+        whyCard2: "✓ Food Safety Commitment",
+        whyCard3: "✓ Experienced Team",
+        whyCard4: "✓ Reliable Supply Chain",
+        whyCard5: "✓ Health & Safety Compliance",
+        whyCard6: "✓ Customer Satisfaction Focus",
+        certsTitle: "Certifications",
+        certsSubtitle: "International standards demonstrating our commitment to quality, safety and excellence.",
+        certDesc1: "Quality Management",
+        certDesc2: "Environmental Management",
+        certDesc3: "Health & Safety",
+        certDesc4: "Food Safety Management",
+        galleryTitle: "Gallery",
+        gallerySubtitle: "Discover our catering operations, facilities and services.",
+        contactTitle: "Contact Us",
+        contactSubtitle: "We are ready to support your projects anywhere in Algeria.",
+        locationTitle: "Location",
+        footerTitle: "SARL SIGMA CATERING",
+        footerSubtitle: "Professional Catering & Base Life Supply Solutions"
+    }
+};
+
+function setLang(lang){
+    const d = langData[lang];
+    document.documentElement.lang = lang;
+    document.body.dir = d.dir;
+
+    for(const [id, text] of Object.entries(d)){
+        const el = document.getElementById(id);
+        if(el) el.innerHTML = text;
+    }
+}
+
+document.getElementById("hamburger").addEventListener("click", function(){
+    document.getElementById("navLinks").classList.toggle("active");
+});
+
+document.getElementById("footerCopy").innerHTML =
+    "\u00A9 " + new Date().getFullYear() + " SARL SIGMA CATERING - All Rights Reserved";
+
+</script>
+
+</body>
+</html>
+
