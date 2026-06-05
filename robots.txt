@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phinfo05.github.io/sigma-catering/sitemap.xml
